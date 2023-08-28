@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .background-container {
+            background-image: url('backg.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding-top: 40px;
+        }
+
+        .navbar {
+            background-color: black;
+            padding: 10px;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 1.5rem;
+            text-transform: capitalize;
+        }
+
+        /* Center the navbar links on small screens */
+        .navbar-nav {
+            text-align: center;
+        }
+
+        .nav-link {
+            font-weight: bold;
+            font-style: italic;
+            color: #fff;
+            margin: 5px;
+            transition: 0.6s;
+            border-radius: 20px;
+            text-transform: capitalize;
+        }
+
+        .nav-link:hover {
+            transform: translateY(-5px);
+            background: red;
+            color: #fff;
+        }
+
+        .about-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .team-leader {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .team-leader img {
+            width: 200px;
+            height: 250px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+
+        .team-member {
+            text-align: center;
+            border: none;
+            align-self: center;
+        }
+
+        .team-member img {
+            width: 200px;
+            height: 250px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .member-name {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .member-position {
+            color: #555;
+        }
+    </style>
+    <title>About Us</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a href="" class="navbar-brand"><img src="WIE Logo White.png" alt="Logo" width="180" height="80" class="d-inline-block align-text-top"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="main.html" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="events.html" class="nav-link">EVENTS</a></li>
+                <li class="nav-item"><a href="" class="nav-link">ABOUT US</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="background-container">
+        <div class="about-section">
+            <h2 style="color: black; font-weight: 500; text-shadow: 1px 1px grey;">About BMSCE IEEE WIE</h2>
+            <p style="width: 60%; color: black; font-weight: 500; text-shadow: 1px 1px grey; text-align: justify;">IEEE Women in Engineering (WIE) is a global network of IEEE members and volunteers dedicated to promoting equality among engineers and scientists. It focuses on inspiring young women around the world and continuing their academic interests in their career in the field of engineering and science. BMSCE IEEE WIE aims at encouraging young minds to pursue research in the field of science and is also dedicated to helping them develop the required skills for the industry. We conduct various workshops, technical talks, and seminars. BMSCE IEEE WIE is a great platform where you can collaborate and network with various established organizations, where you get scholarship opportunities and travel grants. Access to WIE newsletter and the opportunity to be published in IEEE WIE magazine are some of the benefits of this chapter. WIE aims to provide different volunteering opportunities and inculcate leadership qualities.</p>
+            <h2 style="color: black; font-weight: 500; text-shadow: 1px 1px grey;">What we aim at?</h2>
+            <p style="width: 60%; color: black; font-weight: 500; text-shadow: 1px 1px grey; text-align: justify;">WIE aims to provide equal opportunities to women by the cohesive efforts of men and women.</p>
+            <div class="team-leader">
+                <h2 style="color: black; font-weight: 500; text-shadow: 1px 1px grey;">Chapter Advisor</h2>
+                <img src="Screenshot 2023-08-27 102318.png" alt="Team Leader">
+                <p class="member-name" style="color: black; font-weight: 500; text-shadow: 1px 1px grey;">Dr. D N Sujatha</p>
+            </div>
+            <h2 style="color: black; font-weight: 500; text-shadow: 1px 1px grey;">Executive Committee 2023-24</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="Ganavi V Raghavan_Chairperson.jpg" alt="Team Member 1">
+                    <p class="member-name" style="color: black; font-weight: 500; text-shadow: 1px 1px grey;">Ganavi V Raghavan</p>
+                    <p class="member-position" style="color: black; font-weight: 500; text-shadow: 1px 1px grey;">Chairperson</p>
+                </div>
+                <div class="team-member">
+                    <img src="div.jpeg" alt="Team Member 2">
+                    <p class="member-name" style="color: black; font-weight: 500; text-shadow: 1px 1px grey;">G Divyashree</p>
+                    <p class="member-position" style="color: black; font-weight: 500; text-shadow: 1px 1px grey;">Vice Chairperson</p>
+                </div>
+                <div class="team-member">
+                    <img src="anushka.jpeg" alt="Team Member 3">
+                    <p class="member-name" style="color: black; font-weight: 500; text-shadow: 1px 1px grey;">Anushka Rajgiri</p>
+                    <p class="member-position" style="color: black; font-weight: 500; text-shadow: 1px 1px grey;">Treasurer</p>
+                </div>
+                <div class="team-member">
+                    <img src="bhooti.jpeg" alt="Team Member 4">
+                    <p class="member-name" style="color: black; font-weight: 500; text-shadow: 1px 1px grey;">Anubhuti Anand N</p>
+                    <p class="member-position" style="color: black; font-weight: 500; text-shadow: 1px 1px grey;">Secretary</p>
+                </div>
+                <div class="team-member">
+                    <img src="Medha Hegde_Joint Secretary .jpg" alt="Team Member 5">
+                    <p class="member-name" style="color: black; font-weight: 500; text-shadow: 1px 1px grey;">Medha Hegde</p>
+                    <p class="member-position" style="color: black; font-weight: 500; text-shadow: 1px 1px grey;">Joint Secretary</p>
+                </div>
+                <div class="team-member">
+                    <img src="Ananya Srinivasan_Senior SAC.jpg" alt="Team Member 6">
+                    <p class="member-name" style="color: black; font-weight: 500; text-shadow: 1px 1px grey;">Ananya Srinivasan</p>
+                    <p class="member-position" style="color: black; font-weight: 500; text-shadow: 1px 1px grey;">Senior SAC Coordinator</p>
+                </div>
+                <div class="team-member">
+                    <img src="leevan.jpeg" alt="Team Member 7">
+                    <p class="member-name" style="color: black; font-weight: 500; text-shadow: 1px 1px grey;">Leevan Lishanth Dsouza</p>
+                    <p class="member-position" style="color: black; font-weight: 500; text-shadow: 1px 1px grey;">Senior SAC Coordinator</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

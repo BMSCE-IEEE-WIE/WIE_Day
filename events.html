@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(rgb(220, 195, 220), rgb(148, 58, 223));
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            padding: 10px;
+            background-color: black;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-style: italic;
+            padding-left: 90px;
+            font-size: 30px;
+            text-transform: capitalize;
+        }
+
+        .navbar-nav {
+            padding-left: 550px;
+        }
+
+        .nav-link {
+            font-weight: bold;
+            font-style: italic;
+            color: #fff;
+            margin-left: 25px;
+            transition: 0.6s;
+            border-radius: 20px;
+            text-transform: capitalize;
+        }
+
+        .nav-link:hover {
+            transform: translateY(-20px);
+            background: red;
+        }
+
+        .box-container {
+            align-items: center;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        div.card {
+            box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .collab {
+            margin-top: auto;
+        }
+
+        .logos {
+            overflow: hidden;
+            padding: 10px 0;
+            background-image: linear-gradient(180deg, #543374, white, #543374);
+            white-space: nowrap;
+
+
+        }
+
+        .logos-slide img {
+            height: 60px;
+            margin: 0 10px;
+        }
+
+        .logos-slide {
+            display: inline-block;
+
+            animation: 5s slide infinite linear;
+        }
+
+        .logos:hover .logos-slide {
+            animation-play-state: paused;
+        }
+
+        .logos:before,
+        .logos:after {
+            position: relative;
+            top: 0;
+
+            width: 250px;
+            height: 100%;
+
+            content: "";
+            z-index: 2;
+        }
+
+
+
+        /* Your existing CSS for the slider */
+    </style>
+</head>
+
+<body style="background-image: url('backg.jpeg');">
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="" class="navbar-brand"><img src="WIE Logo White.png" alt="Logo" width="180" height="80" class="d-inline-block align-text-top"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="main.html" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="events.html" class="nav-link">EVENTS</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">ABOUT US</a></li>
+            </ul>
+        </div>
+    </nav>
+    <center>
+        <h1 style="margin: 10px; color: white; text-shadow: 3px 3px black;">Explore our Events</h1>
+    </center>
+    <div class="box-container">
+
+        <div class="card" style="width: 17rem;">
+
+            <div class="card-body">
+                <h3 class="card-title">30th AUGUST</h3>
+                <p class="card-text">There are in total 5 events on 30th August including the flagship event DeCipher.
+                </p>
+                <center><a href="30th.html" class="btn btn-primary">Explore</a></center>
+            </div>
+        </div>
+        <div class="card" style="width: 17rem;">
+
+            <div class="card-body">
+                <h3 class="card-title">31st AUGUST</h3>
+                <p class="card-text">There are in total 3 events on 31st August from IEEE PELS and IES, ISE SC and IIC
+                </p>
+                <center><a href="31st.html" class="btn btn-primary">Explore</a></center>
+            </div>
+        </div>
+        <div class="card" style="width: 17rem;">
+
+            <div class="card-body">
+                <h3 class="card-title">1st September</h3>
+                <p class="card-text">There are in total 3 events on 1st September from IEEE CompSoc, Gradient SC and
+                    GDSC BMSCE</p>
+                <center><a href="1st.html" class="btn btn-primary">Explore</a></center>
+            </div>
+        </div>
+        <div class="card" style="width: 17rem;">
+
+            <div class="card-body">
+                <h3 class="card-title">2nd September</h3>
+                <p class="card-text"> The day with the cultural evening including performances by various cultural clubs
+                    of BMSCE.</p>
+                <center><a href="2nd.html" class="btn btn-primary">Explore</a></center>
+            </div>
+        </div>
+
+    </div>
+    <div class="collab">
+        <center>
+            <h1 style="color: white; text-shadow: 3px 3px black; ">In Collaboration with</h1>
+        </center>
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="logo acm.png">
+                <img src="mclogo.png">
+                <img src="IMG_20230827_210510_997-removebg-preview.png">
+                <img src="IMG-20230827-WA0026-removebg-preview.png">
+                <img src="Orange.png">
+                <img src="gradientlogo (1).png" style="border-radius: 50%;">
+                <img src="Screenshot_2023-08-28_014507-removebg-preview.png">
+                <img src="QC logo.jpeg" style="border-radius: 50%;">
+                <img src="BMSCE IEEE PELS LOGO COLORED.png">
+                <img src="iic new logo.png">
+
+            </div>
+            <div class="logos-slide">
+                <img src="logo acm.png">
+                <img src="mclogo.png">
+                <img src="IMG_20230827_210510_997-removebg-preview.png">
+                <img src="IMG-20230827-WA0026-removebg-preview.png">
+                <img src="Orange.png">
+                <img src="gradientlogo (1).png" style="border-radius: 50%;">
+                <img src="Screenshot_2023-08-28_014507-removebg-preview.png">
+                <img src="QC logo.jpeg" style="border-radius: 50%;">
+                <img src="BMSCE IEEE PELS LOGO COLORED.png">
+                <img src="iic new logo.png">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

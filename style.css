@@ -1,0 +1,141 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+            background-color: black;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 1.5rem;
+            text-transform: capitalize;
+        }
+
+        /* Center the navbar links on small screens */
+        .navbar-nav {
+            text-align: center;
+        }
+
+        .nav-link {
+            font-weight: bold;
+            font-style: italic;
+            color: #fff;
+            margin: 5px;
+            transition: 0.6s;
+            border-radius: 20px;
+            text-transform: capitalize;
+        }
+
+        .nav-link:hover {
+            transform: translateY(-5px);
+            background: red;
+            color: #fff;
+        }
+
+/* Centered content styles */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 3rem; /* Responsive font size */
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.5rem; /* Responsive font size */
+    font-weight: bold;
+    color: #141212;
+}
+
+.countdown {
+    font-size: 2rem; /* Responsive font size */
+    text-align: center;
+}
+
+.countdown-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown span {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.3);
+    background-image: radial-gradient(rgb(182, 169, 194), #3d2158);
+    color: white;
+    font-weight: 500;
+    text-shadow: 1px 1px black;
+}
+
+/* Footer styles */
+.footer {
+    background-image: linear-gradient(180deg, #bcb4c9, #543374);
+    padding: 10px 0;
+}
+
+.footer h4 {
+    font-size: 1.5rem; /* Responsive font size */
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+
+.footer h6 {
+    font-size: 1rem; /* Responsive font size */
+    font-weight: 500;
+    text-shadow: 1px 1px black;
+}
+
+.social-icon {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    text-shadow: 2px 2px black;
+}
+
+.icon-linkedin:before {
+    content: "\f0e1"; /* LinkedIn icon */
+}
+
+.icon-instagram:before {
+    content: "\f16d"; /* Instagram icon */
+}
+
+.icon-envelope:before {
+    content: "\f0e0"; /* Envelope icon */
+}
+
+/* Responsive Media Query */
+@media (max-width: 768px) {
+    .navbar-nav {
+        padding-left: 0;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    .countdown {
+        font-size: 1.5rem;
+    }
+    .countdown span {
+        font-size: 1.5rem;
+    }
+    .footer h4 {
+        font-size: 1.2rem;
+    }
+    .footer h6 {
+        font-size: 0.9rem;
+    }
+}
